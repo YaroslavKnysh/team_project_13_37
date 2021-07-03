@@ -1,28 +1,28 @@
 /* Logo */
-.logo-text {
+.logo__text {
   font-weight: 800;
   font-size: 26px;
   line-height: 1.23;
   letter-spacing: 0.04em;
-  color: $accent-black;
+  color: $primary-text-color;
 
   &--dark {
     font-weight: 800;
     font-size: 26px;
     line-height: 1.23;
     letter-spacing: 0.04em;
-    color: $accent-black;
-    color: $accent-white;
+    color: $primary-text-color;
+    color: $primary-background;
   }
 }
 
-.logo-descr {
+.logo__descr {
   font-weight: bold;
   font-size: 8px;
   line-height: 1.25;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: $accent-black;
+  color: $primary-text-color;
 
   &--accent {
     font-weight: bold;
@@ -30,12 +30,12 @@
     line-height: 1.25;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: $accent-orange;
+    color: $accent;
   }
 }
 
 /* Buttons */
-.submit-btn {
+.submit__btn {
   @media screen and (min-width: 1680px) {
     background-color: transparent;
     padding: 27px 23px;
@@ -47,8 +47,8 @@
     line-height: 1.21;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: $accent-white;
-    background-color: $accent-orange;
+    color: $primary-background;
+    background-color: $accent;
 
     &--orange {
       background-color: transparent;
@@ -60,8 +60,8 @@
       line-height: 1.21;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: $accent-orange;
-      border: 2px solid $accent-orange;
+      color: $accent;
+      border: 2px solid $accent;
     }
   }
 
@@ -75,11 +75,11 @@
     line-height: 1.21;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: $accent-orange;
-    border: 2px solid $accent-orange;
+    color: $accent;
+    border: 2px solid $accent;
 
     &--orange {
-      background-color: $accent-orange;
+      background-color: $accent;
       padding: 15px 5px;
       width: 260px;
       height: 48px;
@@ -89,7 +89,7 @@
       line-height: 1.25;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: $accent-white;
+      color: $primary-background;
     }
   }
 
@@ -98,16 +98,16 @@
     padding: 17px 35px;
     width: 260px;
     height: 48px;
-    border: 2px solid $accent-orange;
+    border: 2px solid $accent;
     font-weight: bold;
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: $accent-orange;
+    color: $accent;
 
     &--orange {
-      background-color: $accent-orange;
+      background-color: $accent;
       padding: 14px 36px;
       border: none;
       font-weight: bold;
@@ -115,7 +115,7 @@
       line-height: 1.25;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: $accent-white;
+      color: $primary-background;
     }
   }
 }
