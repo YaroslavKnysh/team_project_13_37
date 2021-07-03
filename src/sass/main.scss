@@ -5,3 +5,18 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './base/body';
+@import './base/basic-reset';
+@import './base/variables';
+@import './base/visually-hidden';
+@import './components/header';
+@import './components/hero';
+@import './components/advantages';
+@import './components/problems';
+@import './components/how_we_do';
+@import './components/program';
+@import './components/benefits';
+@import './components/about';
+@import './components/guarantee';
+@import './components/reviews';
+@import './components/contacts';
+@import './components/footer';
