@@ -1,0 +1,121 @@
+/* Logo */
+.logo-text {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.23;
+  letter-spacing: 0.04em;
+  color: $accent-black;
+
+  &--dark {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    color: $accent-black;
+    color: $accent-white;
+  }
+}
+
+.logo-descr {
+  font-weight: bold;
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $accent-black;
+
+  &--accent {
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $accent-orange;
+  }
+}
+
+/* Buttons */
+.submit-btn {
+  @media screen and (min-width: 1680px) {
+    background-color: transparent;
+    padding: 27px 23px;
+    width: 336px;
+    height: 70px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $accent-white;
+    background-color: $accent-orange;
+
+    &--orange {
+      background-color: transparent;
+      padding: 27px 70px;
+      width: 354px;
+      height: 70px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.21;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: $accent-orange;
+      border: 2px solid $accent-orange;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1679px) {
+    background-color: transparent;
+    padding: 15px 5px;
+    width: 260px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $accent-orange;
+    border: 2px solid $accent-orange;
+
+    &--orange {
+      background-color: $accent-orange;
+      padding: 15px 5px;
+      width: 260px;
+      height: 48px;
+      border: none;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: $accent-white;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    background-color: transparent;
+    padding: 17px 35px;
+    width: 260px;
+    height: 48px;
+    border: 2px solid $accent-orange;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $accent-orange;
+
+    &--orange {
+      background-color: $accent-orange;
+      padding: 14px 36px;
+      border: none;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: $accent-white;
+    }
+  }
+}
