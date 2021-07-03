@@ -1,4 +1,11 @@
 .guarantee {
+  &__container {
+    background-color: $secondary-background;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+  }
+
   &__title {
     margin-bottom: 30px;
     font-weight: 800;
@@ -37,6 +44,7 @@
     font-size: 12px;
     line-height: 1.67;
     letter-spacing: 0.04em;
+    color: $additional-text-color;
 
     &--accent {
       color: $accent;
@@ -44,8 +52,30 @@
   }
 }
 
-.wrapper {
-  background-color: $secondary-background;
-  padding-top: 30px;
-  padding-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .guarantee {
+    &__text {
+      line-height: 2.33;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .guarantee {
+    &__container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-bottom: 107px;
+    }
+
+    &__title {
+      margin-bottom: 50px;
+      font-size: 46px;
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
 }
