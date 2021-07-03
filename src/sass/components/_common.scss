@@ -36,7 +36,7 @@
 
 /* Buttons */
 .submit__btn {
-  @media screen and (min-width: 1680px) {
+  @media screen and (min-width: 1368px) {
     background-color: transparent;
     padding: 27px 23px;
     width: 336px;
@@ -65,7 +65,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1679px) {
+  @media screen and (min-width: 768px) and (max-width: 1367px) {
     background-color: transparent;
     padding: 15px 5px;
     width: 260px;
