@@ -6,11 +6,11 @@
   //до этого момента вся верстка ОТЗЫВЧИВАЯ (резиновая)
   @media screen and (min-width: 480px) {
     width: 440px;
+    margin: 0 auto;
   }
 
   @media screen and (min-width: 768px) {
     width: 688px;
-    margin: 0 auto;
   }
 
   @media screen and (min-width: 1366px) {
