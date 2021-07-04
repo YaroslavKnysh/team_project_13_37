@@ -1,7 +1,5 @@
 .about {
-  @media screen and (min-width: 768px) {
-    padding: 0 40px; /* перебиваю .container: padding: 20px */
-  }
+  margin-bottom: 50px;
 }
 
 .about__heading {
@@ -20,7 +18,7 @@
     font-size: 26px;
   }
 
-  @media screen and (min-width: 1680px) {
+  @media screen and (min-width: 1366px) {
     margin-bottom: 50px;
     font-size: 46px;
   }
@@ -52,7 +50,7 @@
     display: block;
     border-bottom: 2px $accent solid;
     width: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 22px; /* в макете нет, подобрал */
 
     /* Псевдоэлемент? с этим в макете...
     font-weight: bold;
@@ -97,6 +95,14 @@
   margin-bottom: 10px;
 }
 
+.about__item {
+  margin-bottom: 24px; /* в макете нет, подобрал */
+
+  &:last-child {
+    margin-bottom: 18px; /* в макете нет, подобрал */
+  }
+}
+
 .about__text {
   font-weight: 500;
   font-size: 12px;
@@ -113,5 +119,4 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: $accent;
-  margin-bottom: 50px;
 }
