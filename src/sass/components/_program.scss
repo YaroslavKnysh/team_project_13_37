@@ -1,0 +1,35 @@
+.program {
+  background: $primary-text-color;
+}
+.program__container {
+}
+.program__list {
+  border-left: 1px solid rgba(218, 10, 10, 0.87);
+}
+.program__list-semester {
+  position: relative;
+  margin-left: 50px;
+}
+.program__title {
+  padding-top: 50px;
+  text-align: center;
+  color: $primary-background;
+}
+.program__list-title {
+  color: $primary-background;
+}
+.program__list-subtitle {
+  color: $accent;
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 1px;
+    margin-right: 5px;
+    background-color: $accent;
+  }
+}
+.program__list-text {
+  color: $secondary-text-color;
+}
