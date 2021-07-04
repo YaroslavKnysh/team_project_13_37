@@ -1,9 +1,13 @@
 .container {
-  padding: 0 15px;
-
   // ширина контейнера взята с рассчета отступов по 20px, как на макете.
   //макет мобильной версии в размере 320рх, а точка перелома - 480рх
   //до этого момента вся верстка ОТЗЫВЧИВАЯ (резиновая)
+  @media screen and (max-width: 319px) {
+    padding: 0 15px;
+  }
+  @media screen and (min-width: 320px) {
+    padding: 0 20px;
+  }
   @media screen and (min-width: 480px) {
     width: 440px;
     margin: 0 auto;
