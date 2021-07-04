@@ -1,17 +1,60 @@
 <header>
-    <a class="header__logo">
-        <span class="header__logo--firstText">Hell</span>
-        <span class="header__logo--firstText">EN</span>
-        <span class="header__logo--secondText">
-        <span class="header__logo--accentColor">hellish</span>english</span>
-        <svg class="header__logo--icon">
-            <use href="./images/svg/sprite.svg#icon-fire"></use>
-        </svg>
-    </a>
-    <svg>
-        <use href=""></use>
-    </svg>
-    <div class="mobile-menu">
+    <div class=" container header-container">
+        <a class="header__logo">
+            <div class="header__logo-firstText">
+                <span class="header__logo-firstText-one">Hell</span>
+                <svg class="header__logo-icon" width="14" height="19">
+                    <use href="./images/svg/sprite.svg#icon-fire"></use>
+                </svg>
+                <span class="header__logo-firstText-two">EN</span>
+            </div>
+            <div class="header__logo-secondText">
+                <span class="header__logo-secondText-one">hellish</span>
+                <span class="header__logo-secondText-two">english</span>
+            </div>
+        </a>
 
+        <svg class="header__icon-menu" width="21" height="12">
+            <use href="./images/svg/sprite.svg#icon-menu"></use>
+        </svg>
     </div>
+
+<!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <div class="mobile-menu__container">
+            <a class="mobile-menu__logo">
+                <div class="mobile-menu__logo-firstText">
+                    <span class="mobile-menu__logo-firstText-one">Hell</span>
+                    <svg class="mobile-menu__logo-icon" width="14" height="19">
+                        <use href="./images/svg/sprite.svg#icon-fire"></use>
+                    </svg>
+                    <span class="mobile-menu__logo-firstText-two">EN</span>
+                </div>
+                <div class="mobile-menu__logo-secondText">
+                    <span class="mobile-menu__logo-secondText-one">hellish</span>
+                    <span class="mobile-menu__logo-secondText-two">english</span>
+                </div>
+            </a>
+        
+            <svg class="mobile-menu__icon-menu" width="21" height="12">
+                <use href="./images/svg/sprite.svg#icon-fire"></use>
+            </svg>
+        </div>
+    </div>
+
+    <ul class="mobile-menu__navigation">
+        <li class="mobile-menu__item">
+            <a href="#" target="blank" rel="noopener noreferrer">Studying program</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="#" target="blank" rel="noopener noreferrer">About</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="#" target="blank" rel="noopener noreferrer">Training options</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="#" target="blank" rel="noopener noreferrer">Contacts</a>
+        </li>
+    </ul>
+    <button class="mobile-menu__button" type="button">Consultation by phone</button>
 </header>

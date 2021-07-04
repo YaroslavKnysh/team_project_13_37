@@ -1,4 +1,4 @@
-.header-container {
+.mobile-menu__container {
   display: flex;
   padding-top: 34px;
   padding-bottom: 50px;
@@ -27,8 +27,4 @@
   &-secondText-two {
     color: $primary-text-color;
   }
-}
-
-.header__icon-menu {
-  outline: 1px solid black;
 }
