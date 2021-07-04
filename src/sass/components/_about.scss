@@ -1,0 +1,117 @@
+.about {
+  @media screen and (min-width: 768px) {
+    padding: 0 40px; /* перебиваю .container: padding: 20px */
+  }
+}
+
+.about__heading {
+  font-weight: 800;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    margin-bottom: 50px;
+    font-size: 46px;
+  }
+}
+
+.teacher-img {
+  margin-bottom: 20px;
+}
+
+.about__name {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  color: $primary-text-color;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid $secondary-text-color;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.about__advantages-list {
+  &::after {
+    content: '';
+    display: block;
+    border-bottom: 2px $accent solid;
+    width: 20px;
+    margin-bottom: 5px;
+
+    /* Псевдоэлемент? с этим в макете...
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 164.9%;
+    display: flex;
+    align-items: center;
+    */
+  }
+}
+
+.advantages-list__item {
+  display: flex;
+  margin-bottom: 24px; /* в макете нет, подобрал */
+
+  &::before {
+    content: url(../images/svg/ok.svg);
+    margin-right: 9px;
+  }
+
+  &:last-child {
+    margin-bottom: 39px; /* в макете нет, подобрал */
+  }
+}
+
+.advantages-list__svg {
+  width: 17px;
+  height: 14px;
+  margin-right: 9px;
+}
+
+.advantages-list__text {
+  display: inline-flex;
+  flex-wrap: wrap;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.06em;
+  color: $primary-text-color;
+}
+.about__list {
+  margin-bottom: 10px;
+}
+
+.about__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.16;
+  letter-spacing: 0.01em; /* в макете нет, подобрал */
+  color: $secondary-text-color;
+}
+
+.about__link {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.66;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: $accent;
+  margin-bottom: 50px;
+}
