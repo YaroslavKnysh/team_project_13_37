@@ -1,0 +1,135 @@
+@media screen and (min-width: 320px) {
+  .hero {
+    background-image: url('../images/project_mobile/background_hero.png');
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url('../images/project_tablet/background_hero.png');
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url('../images/project_desktop/background_hero.png');
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  background-size: cover;
+}
+
+.hero__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 8px;
+
+  color: $primary-text-color;
+}
+.hero__subscription-one {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+
+  color: $secondary-text-color;
+}
+
+.hero__subscription-two {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.6;
+
+  color: $primary-text-color;
+}
+
+.hero__subscription-accent {
+  color: $accent;
+}
+
+.hero__button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: $primary-background;
+
+  width: 260px;
+  height: 48px;
+  left: 30px;
+  top: 315px;
+  background: $accent;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 52px;
+  margin-bottom: 55px;
+}
+.hero__image {
+  margin: auto;
+}
+
+.hero__right {
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+  .container {
+    position: relative;
+  }
+  .hero__button {
+    position: absolute;
+    top: 126px;
+    left: 20px;
+  }
+  .hero__left {
+    width: 350px;
+  }
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+  .hero__subscription-two {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .hero__left {
+    width: 642px;
+    margin-top: 54px;
+  }
+  .hero__button {
+    top: 381px;
+    width: 354px;
+    height: 70px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .hero__title {
+    font-size: 58px;
+    line-height: 1.3;
+  }
+  .hero__subscription-one {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+  }
+
+  .hero__subscription-two {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .hero__subscription-accent {
+    color: $primary-text-color;
+  }
+}
