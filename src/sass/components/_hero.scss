@@ -13,6 +13,7 @@
     background-image: url('../images/project_desktop/background_hero.png');
   }
 }
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -67,5 +68,68 @@
   top: 315px;
   background: $accent;
 
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 52px;
+  margin-bottom: 55px;
+}
+.hero__image {
+  margin: auto;
+}
+
+.hero__right {
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+  .container {
+    position: relative;
+  }
+  .hero__button {
+    position: absolute;
+    top: 126px;
+    left: 20px;
+  }
+  .hero__left {
+    width: 350px;
+  }
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+  .hero__subscription-two {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .hero__left {
+    width: 642px;
+    margin-top: 54px;
+  }
+  .hero__button {
+    top: 381px;
+    width: 354px;
+    height: 70px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .hero__title {
+    font-size: 58px;
+    line-height: 1.3;
+  }
+  .hero__subscription-one {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+  }
+
+  .hero__subscription-two {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .hero__subscription-accent {
+    color: $primary-text-color;
+  }
 }
