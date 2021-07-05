@@ -3,11 +3,9 @@
   padding-top: 34px;
   padding-bottom: 50px;
   justify-content: space-between;
-  outline: 1px solid red;
 }
 
 .header__logo {
-  outline: 1px solid blue;
   // font задані орієнтовно так, як в макеті відсутня інфо. Даний текст відображається як графічний елекмент.
   &-firstText {
     font-weight: 800;
@@ -30,5 +28,4 @@
 }
 
 .header__icon-menu {
-  outline: 1px solid black;
 }
