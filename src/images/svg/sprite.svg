@@ -62,5 +62,11 @@
 <symbol id="icon-ok" viewBox="0 0 41 32">
 <path fill="#ff6b09" style="fill: var(--color1, #ff6b09)" d="M34.457 1.513c-1.486 0.663-2.907 1.477-4.265 2.379-2.731 1.797-5.227 3.936-7.57 6.217-2.29 2.257-4.442 4.632-6.455 7.124l-0.125 0.16-2.823 3.467-9.595-14.379-3.623 10.041 12.978 15.477c1.257-2.551 2.471-5.070 3.662-7.257 0.297-0.558 0.606-1.081 0.901-1.614 0 0 1.522-2.674 1.925-3.351 1.787-3.021 3.516-5.573 5.381-8.016l-0.144 0.196c1.909-2.491 3.984-4.869 6.336-6.962 1.17-1.051 2.416-2.025 3.749-2.871 1.226-0.81 2.634-1.526 4.121-2.079l0.145-0.047c-1.741 0.366-3.276 0.888-4.722 1.568l0.13-0.055z"></path>
 </symbol>
+<symbol id="icon-burger-menu" viewBox="0 0 48 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.5714" d="M0 2.286h46.857M0 16h46.857M0 29.714h46.857"></path>
+</symbol>
+<symbol id="icon-close-btn" viewBox="0 0 32 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.7647" d="M1.882 29.169l27.287-27.287M29.169 29.169l-27.287-27.287"></path>
+</symbol>
 </defs>
 </svg>
