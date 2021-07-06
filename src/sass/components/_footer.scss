@@ -19,7 +19,44 @@
 }
 
 .logo {
+  display: inline-block;
   padding-bottom: 21px;
+  margin: 0 auto;
+}
+
+.logo__firstText--one,
+.logo__firstText--two {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.23;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: $primary-text-color;
+}
+
+.logo__secondText {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo__secondText--one,
+.logo__secondText--two {
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: 0.18em;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+.logo__secondText--one {
+  margin-right: 5px;
+  color: $accent;
+}
+
+.logo__secondText--two {
+  color: $primary-text-color;
 }
 
 .footer__contacts {
