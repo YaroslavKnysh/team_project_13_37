@@ -1,24 +1,60 @@
 .program {
+  position: relative;
   background: $primary-text-color;
 }
 .program__container {
-}
-.program__list {
-  border-left: 1px solid rgba(218, 10, 10, 0.87);
-}
-.program__list-semester {
-  position: relative;
-  margin-left: 50px;
+  padding-bottom: 540px;
 }
 .program__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
   padding-top: 50px;
   text-align: center;
   color: $primary-background;
 }
-.program__list-title {
-  color: $primary-background;
+.program__list {
+  margin-top: 45px;
+  padding-left: 75px;
+  position: relative;
 }
+.program__list-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  text-transform: uppercase;
+  padding-left: 25px;
+  color: $primary-background;
+  line-height: 1;
+  position: relative;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $accent;
+    position: absolute;
+    left: -6px;
+    top: 0;
+  }
+  &:not(:last-child) {
+    padding-bottom: 40px;
+  }
+  &:not(:last-child) {
+    border-left: 1px solid $primary-background;
+  }
+}
+
 .program__list-subtitle {
+  padding-top: 15px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.66;
+  // display: flex;
+  align-items: center;
+  text-transform: capitalize;
   color: $accent;
   &::before {
     content: '';
@@ -31,5 +67,12 @@
   }
 }
 .program__list-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.66;
   color: $secondary-text-color;
+  opacity: 0.5;
+}
+.distance {
+  padding-top: 10px;
 }
