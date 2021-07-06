@@ -1,6 +1,7 @@
 .howwd {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
+
 .howwd__title {
   font-size: 20px;
   font-weight: 800;
@@ -27,8 +28,6 @@
 }
 .howwd__item {
   padding: 30px 0 27px;
-  width: 100%;
-
   box-shadow: 0px 8px 26px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -68,7 +67,6 @@
 .howwd__description-container {
   padding-right: 10px;
   padding-left: 10px;
-  max-width: 280px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -87,5 +85,93 @@
   .howwd__item:focus &,
   .howwd__item:hover & {
     background-color: $primary-background;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .howwd__description-container {
+    max-width: 280px;
+  }
+  .howwd__item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .howwd__title {
+    font-size: 26px;
+  }
+  .howwd__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
+  }
+  .howwd__item {
+    padding: 40px 20px 30px;
+    width: 334px;
+    flex-basis: calc(100% / 2 - 24px);
+    margin: 12px;
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+    &:hover,
+    &:focus {
+      background-color: $accent;
+      color: $primary-background;
+    }
+  }
+
+  .howwd__icon {
+    margin-bottom: 30px;
+  }
+  .howwd__description-container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .howwd__title {
+    font-size: 46px;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+  .howwd__item-title {
+    font-size: 20px;
+  }
+  .howwd__item-description {
+    font-size: 18px;
+  }
+  .howwd__item {
+    padding: 40px 20px 55px;
+    max-width: 425px;
+    flex-basis: calc(100% / 3 - 20px);
+    margin: 10px;
+  }
+  .howwd__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+  .howwd__item-title {
+    margin-bottom: 32px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .howwd__item-title--psychology {
+    max-width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .howwd__item-description {
+    max-width: 390px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .howwd__item-title::before {
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
