@@ -1,0 +1,45 @@
+.advantages {
+  &__list {
+    margin-bottom: 44px;
+  }
+  &__item {
+    position: relative;
+    width: 215px;
+    padding-left: 105px;
+    font-weight: 700;
+    // float: none;
+    &:nth-child(1) {
+      margin-bottom: 26px;
+      // height: 46px;
+      white-space: nowrap;
+    }
+    &:nth-child(2) {
+      margin-bottom: 21px;
+    }
+  }
+}
+.advantages__item::before {
+  position: absolute;
+  left: 8%;
+
+  display: block;
+  content: '';
+  width: 58px;
+  height: 60px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.advantages__item:nth-child(1):before {
+  background-image: url(../images/svg/person-original.svg);
+}
+.advantages__item:nth-child(2):before {
+  background-image: url(../images/svg/study-original.svg);
+}
+.advantages__item:nth-child(3):before {
+  background-image: url(../images/svg/money-original.svg);
+}
+.advantages__text {
+  padding-top: 8px;
+}
