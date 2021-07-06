@@ -22,6 +22,10 @@
   display: inline-block;
   padding-bottom: 21px;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 .logo__firstText--one,
