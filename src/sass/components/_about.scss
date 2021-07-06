@@ -1,122 +1,201 @@
 .about {
-  margin-bottom: 50px;
+ margin-bottom: 50px;}
+
+.about__flex {
+ @media screen and (min-width: 768px) {
+   display: flex;
+ }
+
+ @media screen and (min-width: 1366px) {
+   width: 1205px;
+ }
 }
 
+.about__photo-div {
+ @media screen and (min-width: 768px) {
+   margin-right: 40px;
+ }
+
+ @media screen and (min-width: 1366px) {
+   margin-right: 30px;
+ }
+}
+
+.descr-div {
+  @media screen and (mon-wodth: 1366px) {
+    width: 642px;
+  }
+ }
+
 .about__heading {
-  font-weight: 800;
-  line-height: 130%;
-  letter-spacing: 0.03em;
-  color: $primary-text-color;
+ font-weight: 800;
+ font-size: 20px;
+ line-height: 130%;
+ letter-spacing: 0.03em;
+ color: $primary-text-color;
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
+ @media screen and (max-width: 767px) {
+   margin-bottom: 20px;
+   font-size: 20px;
+ }
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 30px;
-    font-size: 26px;
-  }
+ @media screen and (min-width: 768px) {
+   margin-bottom: 30px;
+   font-size: 26px;
+ }
 
-  @media screen and (min-width: 1366px) {
-    margin-bottom: 50px;
-    font-size: 46px;
-  }
+ @media screen and (min-width: 1366px) {
+   margin-bottom: 50px;
+   font-size: 46px;
+ }
 }
 
 .teacher-img {
-  margin-bottom: 20px;
+ @media screen and (max-width: 767px) {
+   margin-bottom: 20px;
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 1365px) {
+   margin-bottom: 0;   
+ }
+
+ @media screen and (min-width: 1366px) {
+      
+ }
 }
 
 .about__name {
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.2;
-  color: $primary-text-color;
+ font-weight: 800;
+ color: $primary-text-color;
 
-  &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    border-bottom: 1px solid $secondary-text-color;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
+ &::after {
+   content: '';
+   display: block;
+   width: 100%;
+   border-bottom: 1px solid $secondary-text-color;
+   margin-top: 10px;
+   margin-bottom: 20px;
+
+   @media screen and (min-width: 1366px) {
+    margin-top: 15px;
+    margin-bottom: 30px;
+   }
+ }
+
+ @media screen and (max-width: 1365px) {
+   font-size: 20px;
+ line-height: 1.2;
+ }
+
+ @media screen and (min-width: 1366px) {
+   font-size: 30px;
+   line-height: 1.23;
+  margin-bottom: 30px;
+ } 
 }
 
 .about__advantages-list {
-  &::after {
-    content: '';
-    display: block;
-    border-bottom: 2px $accent solid;
-    width: 20px;
-    margin-bottom: 22px; /* в макете нет, подобрал */
+ &::after {
+   content: '';
+   display: block;
+   border-bottom: 2px $accent solid;
+   width: 20px;
+   
+   @media screen and (max-width: 767px) {
+     margin-bottom: 10px; /* в макете нет, подобрал */
+   }
 
-    /* Псевдоэлемент? с этим в макете...
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 164.9%;
-    display: flex;
-    align-items: center;
-    */
-  }
+   @media screen and (min-width: 768px) {
+      margin-bottom: 25px; /* в макете нет, подобрал */
+   }
+ }
 }
 
 .advantages-list__item {
-  display: flex;
-  margin-bottom: 24px; /* в макете нет, подобрал */
+ display: flex;
+ margin-bottom: 24px; /* в макете нет, подобрал */
 
-  &::before {
-    content: url(../images/svg/ok.svg);
-    margin-right: 9px;
-  }
+ &::before {
+   content: url(../images/svg/ok.svg);
+   margin-right: 9px;
+ }
 
-  &:last-child {
-    margin-bottom: 39px; /* в макете нет, подобрал */
-  }
+ &:last-child {
+   @media screen and (max-width: 767px) {
+     margin-bottom: 13px; /* в макете нет, подобрал */
+   }
+   
+   @media screen and (min-width: 768px) {
+     margin-bottom: 30px; /* в макете нет, подобрал */
+   }
+ }
 }
 
 .advantages-list__svg {
-  width: 17px;
-  height: 14px;
-  margin-right: 9px;
+ width: 17px;
+ height: 14px;
+ margin-right: 9px;
 }
 
 .advantages-list__text {
-  display: inline-flex;
-  flex-wrap: wrap;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  letter-spacing: 0.06em;
-  color: $primary-text-color;
-}
-.about__list {
-  margin-bottom: 10px;
+ display: inline-flex;
+ flex-wrap: wrap;
+ font-weight: 600;
+ font-size: 14px;
+ line-height: 1.21;
+ letter-spacing: 0.06em;
+ color: $primary-text-color;
+
+ @media screen and (min-width: 1366px) {
+   font-size: 18px;
+line-height: 28px;
+line-height: 1.55;
+ }
 }
 
 .about__item {
-  margin-bottom: 24px; /* в макете нет, подобрал */
+ margin-bottom: 24px;
 
-  &:last-child {
-    margin-bottom: 18px; /* в макете нет, подобрал */
-  }
+ &:last-child {
+   @media screen and (max-width: 767px) {
+     margin-bottom: 10px; 
+   }
+
+   @media screen and (min-width: 768px) {
+     margin-bottom: 10px; 
+   }
+
+   @media screen and (min-width: 1366px) {
+     margin-bottom: 20px; 
+   }
+ }
 }
 
 .about__text {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2.16;
-  letter-spacing: 0.01em; /* в макете нет, подобрал */
-  color: $secondary-text-color;
+ flex-wrap: wrap;
+ font-weight: 500;
+ font-size: 12px;
+ line-height: 1.66;
+ letter-spacing: 0.01em; /* в макете нет, подобрал */
+ color: $secondary-text-color;
+
+ @media screen and (min-width: 1366px) {
+   font-size: 18px;
+ line-height: 1.55;
+ }
 }
 
 .about__link {
-  display: block;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.66;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  color: $accent;
+ display: block;
+ font-weight: 500;
+ font-size: 12px;
+ line-height: 1.66;
+ text-decoration: underline;
+ text-decoration-skip-ink: none;
+ color: $accent;
+
+ @media screen and (min-width: 1366px) {
+  font-size: 18px;
+  line-height: 1.55;
+ }
 }
