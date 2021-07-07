@@ -1,30 +1,116 @@
-.mobile-menu__container {
-  display: flex;
-  padding-top: 34px;
-  padding-bottom: 50px;
-  justify-content: space-between;
-  outline: 1px solid red;
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(17, 21, 24, 0.9);
+  overflow: avto;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.mobile-menu__button-modal {
+  width: 260px;
+  height: 48px;
+  margin-right: avto;
+  margin-left: avto;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $accent;
+
+  border: 2px solid $accent;
+  background-color: transparent;
+
+  cursor: pointer;
 }
 
-.header__logo {
-  outline: 1px solid blue;
+.mobile-menu__logo {
   // font задані орієнтовно так, як в макеті відсутня інфо. Даний текст відображається як графічний елекмент.
   &-firstText {
     font-weight: 800;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.23;
     letter-spacing: 0.04em;
-    color: $primary-text-color;
+    color: #fff;
   }
   &-secondText {
     font-weight: 700;
     font-size: 5px;
     line-height: 1.2;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $accent;
   }
   &-secondText-two {
-    color: $primary-text-color;
+    color: #fff;
+  }
+}
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-menu__icon-close {
+  fill: #fff;
+  height: 15px;
+  width: 15px;
+}
+.mobile-menu__link {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.8;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+.mobile-menu__link:hover,
+.mobile-menu__link:focus {
+  color: $accent;
+}
+
+.mobile-menu__container {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu__navigation {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 9999999;
+  padding-top: 30px;
+}
+@media screen and (min-width: 767px) {
+  .mobile-menu__button-modal {
+    display: none;
+  }
+  .mobile-menu__logo {
+    &-firstText {
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 1.23;
+    }
+    &-secondText {
+      font-weight: 700;
+      font-size: 8px;
+      line-height: 1.3;
+    }
+  }
+  .mobile-menu__navigation {
+    padding-left: 218px;
   }
 }

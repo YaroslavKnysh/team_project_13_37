@@ -3,13 +3,14 @@
   padding-top: 34px;
   padding-bottom: 50px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
   // font задані орієнтовно так, як в макеті відсутня інфо. Даний текст відображається як графічний елекмент.
   &-firstText {
     font-weight: 800;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.23;
     letter-spacing: 0.04em;
     color: $primary-text-color;
@@ -18,7 +19,7 @@
     font-weight: 700;
     font-size: 5px;
     line-height: 1.2;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $accent;
   }
@@ -26,6 +27,77 @@
     color: $primary-text-color;
   }
 }
+.mobile-menu__button {
+  width: 260px;
+  height: 48px;
 
-.header__icon-menu {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $accent;
+
+  border: 2px solid $accent;
+  background-color: white;
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu__button {
+    display: none;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .navigation__menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    &-firstText {
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 1.23;
+      letter-spacing: 0.04em;
+      color: $primary-text-color;
+    }
+    &-secondText {
+      font-size: 8px;
+      line-height: 1.3;
+    }
+  }
+}
+@media screen and (min-width: 1366px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .navigation__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 144px;
+  }
+  .header__icon-menu {
+    display: none;
+  }
+  .navigation__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    color: $secondary-text-color;
+  }
+  .navigation__item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .navigation__link:hover,
+  .navigation__link:focus {
+    color: $accent;
+    cursor: pointer;
+  }
 }
