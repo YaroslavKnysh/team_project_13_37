@@ -93,6 +93,8 @@
   pointer-events: auto;
   z-index: 9999999;
   padding-top: 30px;
+
+  transition: all 0.5s;
 }
 @media screen and (min-width: 767px) {
   .mobile-menu__button-modal {
