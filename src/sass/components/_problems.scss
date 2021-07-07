@@ -42,22 +42,21 @@
     background-color: $primary-background;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     @media screen and(min-width: 768px) {
-      column-count: 2;
-      height: 303px;
     }
     @media screen and(min-width: 1366px) {
       padding: 70px 0 62px 114px;
       margin-bottom: 130px;
-      column-count: 3;
-      height: 362px;
     }
   }
   &__list {
-    display: flex;
-    flex-direction: column;
     counter-reset: number 0;
+    @media screen and(min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
     @media screen and(min-width: 1366px) {
-      display: block;
+      margin: -20px;
     }
   }
 
@@ -67,16 +66,18 @@
     margin-top: 15px;
     font-weight: 700;
     counter-increment: number;
+    @media screen and(min-width: 768px) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
 
     @media screen and(min-width: 1366px) {
-      display: inline-block;
-      float: left;
-      margin-right: 15px;
+      width: calc((100% - 3 * 40px) / 3);
+      margin: 20px;
+
       font-size: 20px;
       line-height: 1.4;
-      // &:nth-child(3n) {
-      //   margin-right: 0;
-      // }
+
       &:nth-child(5) {
         margin-right: 0;
       }

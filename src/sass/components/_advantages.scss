@@ -1,7 +1,8 @@
 .advantages {
   &__container {
     padding: 30px 52px 44px 52px;
-
+    background-image: url(../images/project_mobile/background_hero.png);
+    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
     @media screen and(min-width: 768px) {
       padding: 46px 40px 40px 40px;
     }
