@@ -1,0 +1,29 @@
+/* Изначально скрывает развертываемый текст */
+.rm-text {
+  clip: rect(0 0 0 0);
+  position: absolute;
+  opacity: 0;
+  transition: opacity 250ms linear;
+
+  /* При выборе чекбокса открывает */
+  .rm-checkbox:checked ~ & {
+    position: static;
+    opacity: 1;
+  }
+}
+/* Опция 'Read More' реализована через псевдоэлемент */
+.rm-btn::before {
+  content: 'Read More';
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.03em;
+  color: $accent;
+  /* ...чтобы при выборе чекбокса изменить текст на 'Read Less' */
+  .rm-checkbox:checked ~ & {
+    content: 'Read Less';
+  }
+}
+/* Точки текста отдельно скрываются при выборе чекбокса */
+.rm-checkbox:checked ~ .rm-dots {
+  display: none;
+}
