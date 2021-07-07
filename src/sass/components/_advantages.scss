@@ -1,13 +1,11 @@
 .advantages {
   &__container {
     padding: 30px 52px 44px 52px;
-    background-image: url(../images/project_mobile/background_hero.png);
-    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+
     @media screen and(min-width: 768px) {
       padding: 46px 40px 40px 40px;
     }
     @media screen and(min-width: 1366px) {
-      // padding: 96px 153px 130px 183px;
       padding-top: 96px;
       padding-bottom: 130px;
     }
@@ -16,6 +14,7 @@
     @media screen and(min-width: 768px) {
       display: flex;
       justify-content: center;
+      margin: -10px;
     }
   }
   &__item {
@@ -23,25 +22,23 @@
     width: 215px;
     padding-left: 85px;
     font-weight: 700;
+    font-size: 14px;
 
     @media screen and(min-width: 768px) {
-      width: 100%;
-      &:not(:last-child) {
-        margin-right: 21px;
-      }
+      width: calc((100% - 3 * 20px) / 3);
+      margin: 10px;
+
       @media screen and(max-width: 1365px) {
         &:nth-child(1) {
-          width: 240px;
+          width: 215px;
         }
       }
     }
     @media screen and(min-width: 1366px) {
       font-size: 20px;
-      // width: 100%;
     }
     &:nth-child(1) {
       white-space: nowrap;
-      //   width: 448px;
     }
     @media screen and(max-width: 767px) {
       &:nth-child(1) {
