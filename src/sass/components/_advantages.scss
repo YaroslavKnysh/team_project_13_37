@@ -1,25 +1,65 @@
 .advantages {
+  &__container {
+    padding: 30px 52px 44px 52px;
+
+    @media screen and(min-width: 768px) {
+      padding: 46px 40px 40px 40px;
+    }
+    @media screen and(min-width: 1366px) {
+      // padding: 96px 153px 130px 183px;
+      padding-top: 96px;
+      padding-bottom: 130px;
+    }
+  }
   &__list {
-    margin-bottom: 44px;
+    @media screen and(min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
   }
   &__item {
     position: relative;
     width: 215px;
-    padding-left: 105px;
+    padding-left: 85px;
     font-weight: 700;
-    // float: none;
-    &:nth-child(1) {
-      margin-bottom: 26px;
-      // height: 46px;
-      white-space: nowrap;
+
+    @media screen and(min-width: 768px) {
+      width: 100%;
+      &:not(:last-child) {
+        margin-right: 21px;
+      }
+      @media screen and(max-width: 1365px) {
+        &:nth-child(1) {
+          width: 240px;
+        }
+      }
     }
-    &:nth-child(2) {
-      margin-bottom: 21px;
+    @media screen and(min-width: 1366px) {
+      font-size: 20px;
+      // width: 100%;
+    }
+    &:nth-child(1) {
+      white-space: nowrap;
+      //   width: 448px;
+    }
+    @media screen and(max-width: 767px) {
+      &:nth-child(1) {
+        margin-bottom: 26px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 21px;
+      }
+    }
+    @media screen and (max-width: 1365px) {
+      &:nth-child(1) {
+        padding-top: 8px;
+      }
     }
   }
 }
 .advantages__item::before {
   position: absolute;
+  top: -1%;
   left: 8%;
 
   display: block;
@@ -30,6 +70,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  @media screen and(min-width: 1366px) {
+    top: -50%;
+    left: 0;
+    width: 100px;
+    height: 102px;
+  }
 }
 .advantages__item:nth-child(1):before {
   background-image: url(../images/svg/person-original.svg);
@@ -39,7 +85,4 @@
 }
 .advantages__item:nth-child(3):before {
   background-image: url(../images/svg/money-original.svg);
-}
-.advantages__text {
-  padding-top: 8px;
 }
