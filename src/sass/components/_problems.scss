@@ -23,12 +23,12 @@
 
     color: $primary-background;
     @media screen and(min-width: 768px) {
-      width: 420px;
-      height: 88px;
+      // width: 420px;
+      height: 104px;
     }
     @media screen and(min-width: 1366px) {
       font-size: 46px;
-      width: 666px;
+      // width: 666px;
       height: 178px;
     }
   }
