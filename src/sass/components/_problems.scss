@@ -65,7 +65,6 @@
     position: relative;
     padding-top: 24px;
     margin-top: 15px;
-
     font-weight: 700;
     counter-increment: number;
 
@@ -75,8 +74,13 @@
       margin-right: 15px;
       font-size: 20px;
       line-height: 1.4;
-
-      &:nth-child(3n) {
+      // &:nth-child(3n) {
+      //   margin-right: 0;
+      // }
+      &:nth-child(5) {
+        margin-right: 0;
+      }
+      &:nth-child(6) {
         margin-right: 0;
       }
       &:nth-child(1) {
