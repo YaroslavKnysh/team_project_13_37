@@ -22,14 +22,13 @@
 }
 
 .descr-div {
-  @media screen and (mon-wodth: 1366px) {
+  @media screen and (min-width: 1366px) {
     width: 642px;
   }
  }
 
 .about__heading {
  font-weight: 800;
- font-size: 20px;
  line-height: 130%;
  letter-spacing: 0.03em;
  color: $primary-text-color;
@@ -55,12 +54,8 @@
    margin-bottom: 20px;
  }
 
- @media screen and (min-width: 768px) and (max-width: 1365px) {
+ @media screen and (min-width: 768px) {
    margin-bottom: 0;   
- }
-
- @media screen and (min-width: 1366px) {
-      
  }
 }
 
@@ -102,18 +97,18 @@
    width: 20px;
    
    @media screen and (max-width: 767px) {
-     margin-bottom: 10px; /* в макете нет, подобрал */
+     margin-bottom: 10px; 
    }
 
    @media screen and (min-width: 768px) {
-      margin-bottom: 25px; /* в макете нет, подобрал */
+      margin-bottom: 25px; 
    }
  }
 }
 
 .advantages-list__item {
  display: flex;
- margin-bottom: 24px; /* в макете нет, подобрал */
+ margin-bottom: 24px; 
 
  &::before {
    content: url(../images/svg/ok.svg);
@@ -122,11 +117,11 @@
 
  &:last-child {
    @media screen and (max-width: 767px) {
-     margin-bottom: 13px; /* в макете нет, подобрал */
+     margin-bottom: 13px; 
    }
    
    @media screen and (min-width: 768px) {
-     margin-bottom: 30px; /* в макете нет, подобрал */
+     margin-bottom: 30px;
    }
  }
 }
@@ -141,15 +136,17 @@
  display: inline-flex;
  flex-wrap: wrap;
  font-weight: 600;
- font-size: 14px;
- line-height: 1.21;
- letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
  color: $primary-text-color;
 
+@media screen and (max-width: 1365px) {
+  font-size: 14px;
+ line-height: 1.21;
+}
+
  @media screen and (min-width: 1366px) {
-   font-size: 18px;
-line-height: 28px;
-line-height: 1.55;
+  font-size: 16px;
+  line-height: 1.55;
  }
 }
 
@@ -174,10 +171,13 @@ line-height: 1.55;
 .about__text {
  flex-wrap: wrap;
  font-weight: 500;
- font-size: 12px;
- line-height: 1.66;
- letter-spacing: 0.01em; /* в макете нет, подобрал */
+ letter-spacing: 0.01em;
  color: $secondary-text-color;
+
+@media screen and (max-width: 1365px) {
+  font-size: 12px;
+  line-height: 1.66;
+}
 
  @media screen and (min-width: 1366px) {
    font-size: 18px;
@@ -188,11 +188,14 @@ line-height: 1.55;
 .about__link {
  display: block;
  font-weight: 500;
- font-size: 12px;
- line-height: 1.66;
  text-decoration: underline;
  text-decoration-skip-ink: none;
  color: $accent;
+
+@media screen and (max-width: 1365px) {
+  font-size: 12px;
+  line-height: 1.66;
+}
 
  @media screen and (min-width: 1366px) {
   font-size: 18px;
