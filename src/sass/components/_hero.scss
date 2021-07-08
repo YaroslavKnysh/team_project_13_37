@@ -1,18 +1,18 @@
-@media screen and (min-width: 320px) {
-  .hero {
-    background-image: url('../images/project_mobile/background_hero.png');
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    background-image: url('../images/project_tablet/background_hero.png');
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    background-image: url('../images/project_desktop/background_hero.png');
-  }
-}
+// @media screen and (min-width: 320px) {
+//   .hero {
+//     background-image: url('../images/project_mobile/background_hero.png');
+//   }
+// }
+// @media screen and (min-width: 768px) {
+//   .hero {
+//     background-image: url('../images/project_tablet/background_hero.png');
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   .hero {
+//     background-image: url('../images/project_desktop/background_hero.png');
+//   }
+// }
 
 .hero {
   display: flex;
@@ -109,7 +109,8 @@
     margin-top: 54px;
   }
   .hero__button {
-    top: 381px;
+    top: 460px;
+    left: 0;
     width: 354px;
     height: 70px;
     font-size: 14px;
