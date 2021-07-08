@@ -1,19 +1,21 @@
-<header>
+<header class="header">
   <div class="container header-container">
     <nav class="navigation">
-      <a class="header__logo">
-        <div class="header__logo-firstText">
-          <span class="header__logo-firstText-one">Hell</span
-          ><span class="header__logo-firstText-two">EN</span>
-          <svg class="header__logo-icon" width="22" height="30">
-            <use href="./images/svg/sprite.svg#icon-fire"></use>
-          </svg>
-        </div>
-        <div class="header__logo-secondText">
-          <span class="header__logo-secondText-one">hellish</span>
-          <span class="header__logo-secondText-two">english</span>
-        </div>
-      </a>
+      <div class="logo-container">
+        <a class="header__logo">
+          <div class="header__logo-firstText">
+            <span class="header__logo-firstText-one">Hell</span
+            ><span class="header__logo-firstText-two">EN</span>
+            <svg class="header__logo-icon" width="22" height="30">
+              <use href="./images/svg/sprite.svg#icon-fire"></use>
+            </svg>
+          </div>
+          <div class="header__logo-secondText">
+            <span class="header__logo-secondText-one">hellish</span>
+            <span class="header__logo-secondText-two">english</span>
+          </div>
+        </a>
+      </div>
       <ul class="navigation__menu">
         <li class="navigation__item">
           <a class="navigation__link" href="#">Studying program</a>
@@ -30,9 +32,11 @@
       </ul>
     </nav>
     <button class="mobile-menu__button" type="button">Consultation by phone</button>
-    <svg class="header__icon-menu" width="21" height="12" data-menu-button>
-      <use href="./images/svg/sprite.svg#menu"></use>
-    </svg>
+    <button class="header__button-menu">
+      <svg class="header__button-menu--icon" width="21" height="12" data-menu-button>
+        <use href="./images/svg/sprite.svg#menu"></use>
+      </svg>
+    </button>
   </div>
 
   <!-- MOBILE MENU -->

@@ -122,14 +122,14 @@
   visibility: visible;
   pointer-events: auto;
   z-index: 9999999;
-  padding-top: 30px;
-
+  padding-top: 39px;
   transition: all 0.5s;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu__button-modal {
     display: none;
   }
+
   .mobile-menu__logo {
     // &-firstText {
     //   font-weight: 800;
@@ -163,6 +163,14 @@
     }
   }
   .mobile-menu__navigation {
-    padding-left: 218px;
+    padding-left: 176px;
+    margin-top: 72px;
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 9999999;
+    padding-top: 42px;
   }
 }
