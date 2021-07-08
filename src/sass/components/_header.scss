@@ -1,12 +1,16 @@
 .header-container {
   display: flex;
-  padding-top: 34px;
-  padding-bottom: 50px;
-  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 51px;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
+  cursor: pointer;
   // font задані орієнтовно так, як в макеті відсутня інфо. Даний текст відображається як графічний елекмент.
   &-firstText {
     font-weight: 800;
@@ -14,6 +18,7 @@
     line-height: 1.23;
     letter-spacing: 0.04em;
     color: $primary-text-color;
+    position: relative;
   }
   &-secondText {
     font-weight: 700;
@@ -22,15 +27,25 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $accent;
+    margin-top: 2px;
   }
   &-secondText-two {
     color: $primary-text-color;
+  }
+  &-icon {
+    position: absolute;
+    left: 35px;
+    bottom: 1px;
+    width: 15px;
+    height: 19px;
+  }
+  &-firstText-one {
+    margin-right: 22px;
   }
 }
 .mobile-menu__button {
   width: 260px;
   height: 48px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2px;
@@ -39,13 +54,34 @@
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: $accent;
-
   border: 2px solid $accent;
-  background-color: white;
-
+  background-color: $primary-background;
   cursor: pointer;
+  padding: 15px 5px;
+}
+.header__button-menu {
+  background-color: transparent;
+  width: 21px;
+  height: 12px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background-image: url(../images/svg/icon-menu.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.mobile-menu_button-close {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
 @media screen and (max-width: 767px) {
   .mobile-menu__button {
     display: none;
@@ -57,21 +93,53 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 40px;
+    padding-bottom: 83px;
+  }
+  .logo-container {
+    margin-right: 237px;
+  }
+  .mobile-menu__button {
+    margin-right: 40px;
+  }
   .header__logo {
     &-firstText {
       font-weight: 800;
       font-size: 26px;
       line-height: 1.23;
       letter-spacing: 0.04em;
-      color: $primary-text-color;
     }
     &-secondText {
       font-size: 8px;
       line-height: 1.3;
+      margin-top: 3px;
+    }
+
+    &-icon {
+      left: 61px;
+      width: 22px;
+      height: 30px;
+    }
+    &-firstText-one {
+      margin-right: 30px;
     }
   }
 }
 @media screen and (min-width: 1366px) {
+  .logo-container {
+    margin-right: 0;
+  }
+  .mobile-menu__button {
+    margin-right: 0;
+  }
+  .header-container {
+    display: flex;
+    padding-top: 33px;
+    padding-bottom: 45px;
+    justify-content: space-between;
+    align-items: center;
+  }
   .navigation {
     display: flex;
     align-items: center;
@@ -81,7 +149,7 @@
     justify-content: space-between;
     margin-left: 144px;
   }
-  .header__icon-menu {
+  .header__button-menu {
     display: none;
   }
   .navigation__link {
@@ -99,5 +167,12 @@
   .navigation__link:focus {
     color: $accent;
     cursor: pointer;
+  }
+  .mobile-menu__button {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 27px 23px;
+    width: 336px;
+    height: 70px;
   }
 }
