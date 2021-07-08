@@ -2,24 +2,19 @@
   position: absolute;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
    
-  @media screen and  (max-width: 479px) {
-  transform: translateY(-77%);
+  transform: translateY(-66%);
   width: 100vw;
-}
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-  transform: translateY(-94%);
-  width: 100vw;
+  @media screen and (min-width: 480px) {
+  transform: translateY(-75%);
 }
 
   @media screen and (min-width: 768px) {
   transform: translateY(-33%);   
-  width: 100vw;
 }
 
   @media screen and (min-width: 1366px) {
     transform: translateY(-50%); 
-    width: 100vw;
 }
 }
 
@@ -58,9 +53,8 @@
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     background-color: $primary-background;
 
-    ////////// padding-bottom: 30px до 767рх не работает /////////
     @media screen and (max-width: 767px) {
-      padding: 20px 14px 4px 30px;      
+      padding: 20px 14px 20px 30px;      
     }
 
     @media screen and (min-width: 768px) {
@@ -73,7 +67,7 @@
   }
     
 .benefits__list {
-  /*counter-reset: number 0;*/
+   ///* counter-reset: number 0;  *///
   justify-content: space-between;
 
   @media screen and (min-width: 768px) {
@@ -83,12 +77,16 @@ flex-wrap: wrap;
 }
 
   .benefits__item {
+    ///* counter-increment: number; *///
+    
+     @media screen and (max-width: 767px) {
       margin-bottom: 20px;
+     }
 
     @media screen and (min-width: 768px) and (max-width: 1365px) {
       max-width: 236px;
       margin-right: 20px;
-    
+         
       &:nth-child(n+2) {
       margin-right: 0;
       width: 216px;
@@ -101,6 +99,7 @@ flex-wrap: wrap;
    
     @media screen and (min-width: 1366px) {
       width: 356px;
+      margin-bottom: 32px;
       margin-right: 40px;
 
       &:nth-child(3), &:nth-child(6) {
@@ -119,8 +118,8 @@ flex-wrap: wrap;
     &::before {
       content: '';
       color: $accent;
-      /*content: "0" counter(number);*/
-    }
+      ///* content: "0" counter(number); *///
+        }
   }
   
 .benefits__text {
@@ -139,7 +138,44 @@ flex-wrap: wrap;
 }
 }
   
-  .first,
+ .counter {
+    margin-bottom: 10px;
+    color: $accent;
+    font-weight: 700;
+
+    @media screen and (max-width: 1365px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+
+    @media screen and (min-width: 1366px) {
+      font-size: 20px;
+      line-height: 1.65;
+    }
+
+      &::before {
+      content: '';
+      font-weight: 700;
+      color: $primary-text-color;
+      display: inline-block;
+      border: 1px solid $accent;
+      width: 14px;
+      margin-bottom: 5px;
+      margin-right: 6px;
+
+           @media screen and (max-width: 1365px) {
+        font-size: 14px;
+        line-height: 1.71;
+      }
+
+      @media screen and (min-width: 1366px) {
+        font-size: 20px;
+        line-height: 1.65;
+      }
+    }
+  }
+  
+ .first,
   .second,
   .third,
   .fourth,
