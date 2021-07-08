@@ -2,8 +2,6 @@
   background: linear-gradient($primary-text-color 78%, $primary-background 22%);
   &__container {
     padding-top: 25px;
-    width: 100%;
-    height: 100%;
     @media screen and(min-width: 768px) {
       padding: 60px 40px 0 40px;
     }

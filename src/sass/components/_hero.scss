@@ -1,18 +1,20 @@
 @media screen and (min-width: 320px) {
   .hero {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+
     background-image: url('../images/project_mobile/hero-wave-mobile.png');
     // box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+    padding-bottom: 110px;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 768px 619px;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url('../images/project_tablet/hero-wave-tablet.png');
-    background-size: 768px 556px;
+    padding-bottom: 194px;
   }
 }
 @media screen and (min-width: 1366px) {
