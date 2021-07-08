@@ -22,9 +22,11 @@
   display: inline-block;
   padding-bottom: 21px;
   margin: 0 auto;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -66,6 +68,7 @@
 .footer__contacts {
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -81,9 +84,11 @@
   line-height: 1.2;
   letter-spacing: 0.08em;
   color: $primary-text-color;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
+    margin: 0;
   }
 
   @media screen and (min-width: 1366px) {
@@ -121,6 +126,7 @@
   width: 40px;
   height: 40px;
   background-image: url('../images/instagram.svg');
+  cursor: pointer;
 }
 
 .footer__info {
