@@ -1,4 +1,3 @@
-
 @media screen and (min-width: 320px) {
   .hero {
     width: 100%;
@@ -23,11 +22,11 @@
   }
 }
 
-.hero {
+.hero-container {
   display: flex;
   flex-direction: column;
 
-  background-size: cover;
+  // background-size: cover;
 }
 
 .hero__title {
@@ -90,19 +89,18 @@
   margin: auto;
 }
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero-container {
     flex-direction: row;
   }
-  .container {
-    position: relative;
-  }
+  // .hero {
+  //   position: relative;
+  // }
   .hero__button {
     position: absolute;
-    top: 126px;
-    left: 20px;
+    left: 42px;
   }
   .hero__left {
-    width: 350px;
+    width: 332px;
   }
   .hero__title {
     font-size: 26px;
@@ -110,6 +108,9 @@
   }
   .hero__subscription-two {
     width: 280px;
+  }
+  .hero-right {
+    width: 376px;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -119,15 +120,17 @@
   }
   .hero__button {
     top: 460px;
-    left: 0;
     width: 354px;
     height: 70px;
     font-size: 14px;
     line-height: 1.2;
+    left: 0;
   }
   .hero__title {
     font-size: 58px;
     line-height: 1.3;
+
+    width: 550px;
   }
   .hero__subscription-one {
     font-size: 20px;
@@ -138,8 +141,15 @@
   .hero__subscription-two {
     font-size: 20px;
     line-height: 1.6;
+    width: 493px;
   }
   .hero__subscription-accent {
     color: $primary-text-color;
+  }
+  .hero-right {
+    width: 842px;
+  }
+  .hero-container {
+    position: relative;
   }
 }
