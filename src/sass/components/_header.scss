@@ -115,6 +115,12 @@
   }
 }
 @media screen and (min-width: 1366px) {
+  .logo-container {
+    margin-right: 0;
+  }
+  .mobile-menu__button {
+    margin-right: 0;
+  }
   .header-container {
     display: flex;
     padding-top: 33px;
