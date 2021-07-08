@@ -2,7 +2,7 @@
   <div class="container header-container">
     <nav class="navigation">
       <div class="logo-container">
-        <a class="header__logo">
+        <a class="header__logo" href="./index.html">
           <div class="header__logo-firstText">
             <span class="header__logo-firstText-one">Hell</span
             ><span class="header__logo-firstText-two">EN</span>
@@ -32,10 +32,10 @@
       </ul>
     </nav>
     <button class="mobile-menu__button" type="button">Consultation by phone</button>
-    <button class="header__button-menu">
-      <svg class="header__button-menu--icon" width="21" height="12" data-menu-button>
+    <button class="header__button-menu" type="button" data-menu-button>
+      <!-- <svg class="header__button-menu--icon" width="21" height="12" data-menu-button>
         <use href="./images/svg/sprite.svg#menu"></use>
-      </svg>
+      </svg> -->
     </button>
   </div>
 
@@ -56,9 +56,11 @@
             <span class="mobile-menu__logo-secondText-two">english</span>
           </div>
         </a>
-        <svg class="mobile-menu__icon-close" width="15" height="15" data-menu-close>
-          <use href="./images/svg/sprite.svg#close"></use>
-        </svg>
+        <button class="mobile-menu_button-close" type="button" data-menu-close>
+          <svg class="mobile-menu__icon-close" width="15" height="15">
+            <use href="./images/svg/sprite.svg#icon-close2"></use>
+          </svg>
+        </button>
       </div>
 
       <ul class="mobile-menu__navigation">
