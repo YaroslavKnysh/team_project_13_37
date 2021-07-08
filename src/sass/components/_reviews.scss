@@ -1,0 +1,97 @@
+.feedback {
+  margin-bottom: 50px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+  }
+}
+
+.reviewer {
+  padding: 0 20px 62px;
+
+  &__photo {
+    display: block;
+    margin: 0 auto 30px;
+  }
+
+  &__social {
+    display: block;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+
+  &__name {
+    margin-bottom: 16px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $accent;
+  }
+
+  &__education {
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 1.25;
+    color: $secondary-text-color;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feedback {
+    &__title {
+      margin-bottom: 30px;
+      font-size: 26px;
+    }
+  }
+
+  .reviewer {
+    display: flex;
+    padding: 40px;
+
+    &__pics {
+      margin-right: 46px;
+    }
+
+    &__social {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .feedback {
+    margin-bottom: 130px;
+
+    &__title {
+      margin-bottom: 50px;
+      font-size: 46px;
+    }
+  }
+
+  .reviewer {
+    padding: 50px 112px 50px 82px;
+    width: 1090px;
+    margin: 0 auto;
+
+    &__pics {
+      margin-right: 40px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 1.56;
+    }
+  }
+}
