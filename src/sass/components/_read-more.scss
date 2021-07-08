@@ -22,6 +22,10 @@
   .rm-checkbox:checked ~ & {
     content: 'Read Less';
   }
+
+  @media screen and (min-width: 1366px) {
+    font-size: 18px;
+  }
 }
 /* Точки текста отдельно скрываются при выборе чекбокса */
 .rm-checkbox:checked ~ .rm-dots {
