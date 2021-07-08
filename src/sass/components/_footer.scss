@@ -18,6 +18,40 @@
   }
 }
 
+// .logo__firstText--one,
+// .logo__firstText--two {
+//   font-size: 26px;
+//   font-weight: 800;
+//   line-height: 1.23;
+//   letter-spacing: 0.04em;
+//   text-align: left;
+//   color: $primary-text-color;
+// }
+
+// .logo__secondText {
+//   display: flex;
+//   justify-content: flex-start;
+// }
+
+// .logo__secondText--one,
+// .logo__secondText--two {
+//   font-size: 8px;
+//   font-style: normal;
+//   font-weight: 800;
+//   line-height: 1.25;
+//   letter-spacing: 0.18em;
+//   margin-top: 3px;
+//   text-transform: uppercase;
+// }
+
+// .logo__secondText--one {
+//   margin-right: 5px;
+//   color: $accent;
+// }
+
+// .logo__secondText--two {
+//   color: $primary-text-color;
+// }
 .logo {
   display: inline-block;
   padding-bottom: 21px;
@@ -28,43 +62,64 @@
     margin: 0;
     padding: 0;
   }
+  &-firstText {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    color: $primary-text-color;
+    position: relative;
+  }
+  &-secondText {
+    font-weight: 700;
+    font-size: 5px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent;
+    margin-top: 2px;
+    text-align: left;
+  }
+  &-secondText-two {
+    color: $primary-text-color;
+  }
+  &-icon {
+    position: absolute;
+    left: 35px;
+    bottom: 1px;
+    width: 15px;
+    height: 19px;
+  }
+  &-firstText-one {
+    margin-right: 22px;
+  }
+  @media screen and (min-width: 768px) {
+    &-firstText {
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 1.23;
+      letter-spacing: 0.04em;
+      color: $primary-text-color;
+    }
+    &-secondText {
+      font-size: 8px;
+      line-height: 1.3;
+      margin-top: 3px;
+    }
+    &-secondText-two {
+      color: $primary-text-color;
+    }
+    &-icon {
+      position: absolute;
+      left: 60px;
+      width: 22px;
+      height: 30px;
+    }
+    &-firstText-one {
+      margin-right: 30px;
+    }
+  }
 }
-
-.logo__firstText--one,
-.logo__firstText--two {
-  font-size: 26px;
-  font-weight: 800;
-  line-height: 1.23;
-  letter-spacing: 0.04em;
-  text-align: left;
-  color: $primary-text-color;
-}
-
-.logo__secondText {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.logo__secondText--one,
-.logo__secondText--two {
-  font-size: 8px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 1.25;
-  letter-spacing: 0.18em;
-  margin-top: 3px;
-  text-transform: uppercase;
-}
-
-.logo__secondText--one {
-  margin-right: 5px;
-  color: $accent;
-}
-
-.logo__secondText--two {
-  color: $primary-text-color;
-}
-
 .footer__contacts {
   @media screen and (min-width: 768px) {
     display: flex;
