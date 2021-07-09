@@ -18,6 +18,7 @@
   line-height: 1.67;
   letter-spacing: 0.03em;
   color: $accent;
+  text-decoration: underline;
   /* ...чтобы при выборе чекбокса изменить текст на 'Read Less' */
   .rm-checkbox:checked ~ & {
     content: 'Read Less';
