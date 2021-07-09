@@ -3,6 +3,7 @@
 .program {
   position: relative;
   background: $primary-text-color;
+  padding-top: 50px;
 }
 .program__container {
   padding-bottom: 540px;
@@ -12,7 +13,6 @@
   font-size: 20px;
   line-height: 1.3;
   letter-spacing: 0.03em;
-  padding-top: 50px;
   text-align: center;
   color: $primary-background;
 }
@@ -128,6 +128,9 @@
   .program__container {
     padding-bottom: 390px;
   }
+  .program {
+    padding-top: 60px;
+  }
   .program__list-sublist {
     display: flex;
   }
@@ -147,7 +150,6 @@
     }
   }
   .program__title {
-    padding-top: 60px;
     font-size: 26px;
     text-align: left;
   }
@@ -200,11 +202,13 @@
 // ========== НАЧАЛО СТИЛЕЙ ДЛЯ ДЕСКТОП ==========
 
 @media screen and (min-width: 1366px) {
+  .program {
+    padding-top: 120px;
+  }
   .program__container {
     padding-bottom: 365px;
   }
   .program__title {
-    padding-top: 120px;
     font-size: 46px;
   }
   .div-border {
