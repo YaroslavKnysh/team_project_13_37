@@ -5,7 +5,7 @@
 
     background-image: url('../images/project_mobile/hero-wave-mobile.png');
     // box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-    padding-bottom: 110px;
+    padding-bottom: 45px;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -14,7 +14,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url('../images/project_tablet/hero-wave-tablet.png');
-    padding-bottom: 194px;
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 1366px) {
