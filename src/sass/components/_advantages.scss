@@ -1,15 +1,13 @@
 .advantages {
-  &__container {
-    padding: 30px 52px 44px 52px;
-
-    @media screen and(min-width: 768px) {
-      padding: 46px 40px 40px 40px;
-    }
-    @media screen and(min-width: 1366px) {
-      padding-top: 96px;
-      padding-bottom: 130px;
-    }
+  padding: 30px 52px 44px 52px;
+  @media screen and(min-width: 768px) {
+    padding: 46px 40px 40px 40px;
   }
+  @media screen and(min-width: 1366px) {
+    padding-top: 96px;
+    padding-bottom: 130px;
+  }
+
   &__list {
     @media screen and(min-width: 768px) {
       display: flex;

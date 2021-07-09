@@ -1,16 +1,22 @@
 .problems {
+  padding-top: 25px;
   background: linear-gradient($primary-text-color 78%, $primary-background 22%);
+  @media screen and(min-width: 768px) {
+    padding: 60px 40px 0 40px;
+  }
+  @media screen and(min-width: 1366px) {
+    padding: 100px 183px 0 183px;
+    background-image: linear-gradient(transparent 66%, $primary-background 0, $primary-background),
+      url('../images/svg/fire-original.svg'),
+      linear-gradient($primary-text-color 66%, transparent 0, transparent);
+    background-size: contain, 400px 445px, contain;
+    background-repeat: no-repeat;
+    background-position: 0 0, bottom 200px right, 0 0;
+  }
+
   &__container {
-    padding-top: 25px;
-    @media screen and(min-width: 768px) {
-      padding: 60px 40px 0 40px;
-    }
     @media screen and(min-width: 1366px) {
-      padding: 100px 183px 0 183px;
-      background-image: url('../images/svg/fire-original.svg');
-      background-repeat: no-repeat;
-      background-position: right bottom 89px;
-      background-size: 390px 515px;
+      max-width: 100%;
     }
   }
   &__title {
@@ -21,12 +27,12 @@
 
     color: $primary-background;
     @media screen and(min-width: 768px) {
-      // width: 420px;
       height: 104px;
     }
     @media screen and(min-width: 1366px) {
+      margin-bottom: 70px;
       font-size: 46px;
-      // width: 666px;
+
       height: 178px;
     }
   }
