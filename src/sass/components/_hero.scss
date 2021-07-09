@@ -17,6 +17,14 @@
     padding-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .hero__right {
+    width: 800px;
+  }
+  .hero_img {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1366px) {
   .hero {
     background-image: url('../images/project_desktop/hero-wave-desktop.png');
