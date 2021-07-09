@@ -1,7 +1,8 @@
 .guarantee {
   &__container {
     background-color: $secondary-background;
-    padding: 30px 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-bottom: 50px;
   }
 
@@ -13,15 +14,13 @@
     text-align: center;
   }
 
-  &__list {
-    position: relative;
-    padding-left: 23px;
-    border-left: 1px dashed #b9b9b9;
-  }
-
   &__item {
+    position: relative;
+    padding-left: 28px;
+
     &:not(:last-child) {
-      margin-bottom: 23px;
+      padding-bottom: 23px;
+      border-left: 1px dashed #b9b9b9;
     }
 
     &::before {
@@ -54,7 +53,11 @@
 @media screen and (min-width: 768px) {
   .guarantee {
     &__container {
-      padding: 30px 50px 30px 80px;
+      padding: 30px 50px 30px 86px;
+    }
+
+    &__item {
+      padding-left: 32px;
     }
 
     &__text {
@@ -66,13 +69,17 @@
 @media screen and (min-width: 1366px) {
   .guarantee {
     &__container {
-      padding: 50px 112px;
+      padding: 50px 112px 45px 123px;
       margin-bottom: 107px;
     }
 
     &__title {
       margin-bottom: 50px;
       font-size: 46px;
+    }
+
+    &__item {
+      padding-left: 41px;
     }
 
     &__text {
