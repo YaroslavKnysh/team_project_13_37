@@ -14,8 +14,8 @@
 .mobile-menu__button-modal {
   width: 260px;
   height: 48px;
-  margin-right: avto;
-  margin-left: avto;
+  margin-right: auto;
+  margin-left: auto;
 
   font-weight: 700;
   font-size: 14px;
@@ -30,6 +30,11 @@
   background-color: transparent;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+  }
 }
 
 .mobile-menu__logo {

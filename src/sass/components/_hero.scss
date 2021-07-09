@@ -72,13 +72,18 @@
   color: $primary-background;
   width: 260px;
   height: 48px;
-  // left: 30px;
-  // top: 315px;
   background: $accent;
   margin-right: auto;
   margin-left: auto;
   margin-top: 52px;
   margin-bottom: 55px;
+
+  &:focus,
+  &:hover {
+    background-color: $primary-background;
+    color: $accent;
+    border: 2px solid $accent;
+  }
 }
 .hero__image {
   margin: auto;
