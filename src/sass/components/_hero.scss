@@ -70,28 +70,39 @@
 .hero__subscription-accent {
   color: $accent;
 }
+// .hero__button-link {
+//   color: $primary-background;
+
+//   .hero__button:focus &,
+//   .hero__button:hover & {
+//     color: $accent;
+//   }
+// }
 
 .hero__button {
+  color: $primary-background;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
   text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: $primary-background;
   width: 260px;
   height: 48px;
+  cursor: pointer;
   background: $accent;
   margin-right: auto;
   margin-left: auto;
   margin-top: 52px;
   margin-bottom: 55px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
   &:hover {
-    background-color: $primary-background;
     color: $accent;
-    border: 2px solid $accent;
+    background-color: $primary-background;
+    border: 1px solid $accent;
   }
 }
 .hero__image {
