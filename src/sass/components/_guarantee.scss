@@ -50,6 +50,12 @@
   }
 }
 
+@media screen and (min-width: 480px) {
+  .guarantee__container {
+    padding: 50px 20px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .guarantee {
     &__container {
